@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "mocha": "^11.7.4",
+    "nyc": "^17.1.0"
+  }
+}
+"nyc": {
+  "extension": [
+    ".js"
+  ],
+  "exclude": [
+    "test/**",
+    "routes/**",
+    "node_modules"
+  ],
+  "reporter": [
+    "lcov",
+    "text"
+  ],
+  "all": true
+}
+"scripts": {
+  "test": "mocha --recursive --exit",
+  "coverage": "nyc npm test"
+}
