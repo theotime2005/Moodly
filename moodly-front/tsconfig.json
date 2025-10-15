@@ -9,7 +9,8 @@
     "noEmitOnError": true,
     "jsx": "react",
     "lib": ["ESNext", "dom"],
-    "baseUrl": ".",
+  "baseUrl": ".",
+  "skipLibCheck": true,
     "paths": {
       "~/*": ["src/*"],
       "@/*": ["src/*"]
